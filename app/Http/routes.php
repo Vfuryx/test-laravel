@@ -11,11 +11,13 @@
 |
 */
 
-Route::get('/','SimpleController@home');
+Route::get('/','SimpleController@home')->name('home');
 
-Route::get('/about','SimpleController@about');
+Route::get('/about','SimpleController@about')->name('about');
 
-Route::get('/help','SimpleController@help');
+Route::get('/help','SimpleController@help')->name('help');
 
+
+Route::get('signup', 'UserController@create')->name('signup');
 
 

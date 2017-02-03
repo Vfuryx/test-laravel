@@ -7,23 +7,13 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class SimpleController extends Controller
+class UserController extends Controller
 {
 
-
-    public function home()
+    public function create()
     {
-        return view('static_pages.home');
-    }
-
-    public function about()
-    {
-        return view('static_pages.about');
-    }
-
-    public function help()
-    {
-        return view('static_pages.help');
+        return view('users.create');
+        //return view('static_pages.home');
     }
 
 
@@ -35,8 +25,6 @@ class SimpleController extends Controller
     public function index()
     {
         //
-
-
     }
 
     /**
@@ -44,10 +32,7 @@ class SimpleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-    }
+
 
     /**
      * Store a newly created resource in storage.
