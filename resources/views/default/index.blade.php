@@ -7,13 +7,14 @@
 </head>
 <body>
 
-    @include('default._header')
+@include('default._header')
 
-    <div class="container">
-      <div class="col-md-offset-1 col-md-10">
+<div class="container">
+    <div class="col-md-offset-1 col-md-10">
+        @include('shared.messages')
         @yield('content')
         @include('default._footer')
-      </div>
     </div>
+</div>
 </body>
 </html>

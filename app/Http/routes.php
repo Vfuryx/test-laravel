@@ -20,4 +20,6 @@ Route::get('/help','SimpleController@help')->name('help');
 
 Route::get('signup', 'UserController@create')->name('signup');
 
+resource('users', 'UserController');
+
 
