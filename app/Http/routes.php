@@ -22,4 +22,7 @@ Route::get('signup', 'UserController@create')->name('signup');
 
 resource('users', 'UserController');
 
+get('login','SessionsController@create')->name('login');
+post('login','SessionsController@store')->name('login');
+delete('logout','SessionsController@destroy')->name('logout');
 
